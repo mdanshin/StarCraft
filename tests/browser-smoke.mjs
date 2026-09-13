@@ -32,6 +32,9 @@ try {
   await page.locator('.nav[data-view="arsenal"]').click();
   await page.locator('#type-filter').selectOption('all');
   assert.equal(await page.locator('#catalog .game-card').count(), 48);
+  await page.evaluate(() => document.querySelectorAll('img').forEach(img => { img.loading = 'eager'; }));
+  await page.waitForFunction(() => [...document.images].every(img => img.complete && img.naturalWidth > 0));
+  await page.locator('#type-filter').selectOption('unit');
   await page.locator('#search').fill('Морпех');
   assert.equal(await page.locator('#catalog .game-card').count(), 1);
   await page.locator('#catalog [data-card="terran-marine"]').click();
