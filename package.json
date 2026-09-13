@@ -1,0 +1,9 @@
+{
+  "name": "koprulu-frontline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A Russian-language StarCraft II fan card strategy design kit and playable local prototype.",
+  "scripts": {"start": "node scripts/serve.mjs", "test": "node --test tests/*.test.mjs"},
+  "engines": {"node": ">=20"}
+}

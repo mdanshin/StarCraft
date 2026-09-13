@@ -1,0 +1,1209 @@
+[
+  {
+    "id": "terran-hq",
+    "faction": "terran",
+    "name": "Командный центр",
+    "type": "building",
+    "mineral": 16,
+    "gas": 0,
+    "time": 3,
+    "requires": [],
+    "text": "База: +10 лимита и 8 мест добычи минералов. Обучает КСМ. В прототипе также даёт способность МУЛ.",
+    "art": "terran-base",
+    "hp": 36,
+    "shield": 0,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "capacity": 10,
+    "headquarters": true
+  },
+  {
+    "id": "terran-supply",
+    "faction": "terran",
+    "name": "Хранилище",
+    "type": "building",
+    "mineral": 4,
+    "gas": 0,
+    "time": 1,
+    "requires": [
+      "terran-hq"
+    ],
+    "text": "После завершения: +8 лимита снабжения.",
+    "art": "terran-base",
+    "hp": 10,
+    "shield": 0,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "capacity": 8
+  },
+  {
+    "id": "terran-gas",
+    "faction": "terran",
+    "name": "Перерабатывающий завод",
+    "type": "building",
+    "mineral": 3,
+    "gas": 0,
+    "time": 1,
+    "requires": [
+      "terran-hq"
+    ],
+    "text": "Открывает 3 рабочих места на газе; назначьте рабочих кнопкой «На газ».",
+    "art": "terran-base",
+    "hp": 10,
+    "shield": 0,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "refinery": true
+  },
+  {
+    "id": "terran-barracks",
+    "faction": "terran",
+    "name": "Казармы",
+    "type": "building",
+    "mineral": 6,
+    "gas": 0,
+    "time": 1,
+    "requires": [
+      "terran-hq"
+    ],
+    "text": "Одна производственная очередь: морпехи и мародёры.",
+    "art": "terran-base",
+    "hp": 12,
+    "shield": 0,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "production": true
+  },
+  {
+    "id": "terran-factory",
+    "faction": "terran",
+    "name": "Завод",
+    "type": "building",
+    "mineral": 6,
+    "gas": 4,
+    "time": 2,
+    "requires": [
+      "terran-barracks"
+    ],
+    "text": "Одна очередь осадных танков. КСМ занят до завершения здания.",
+    "art": "terran-base",
+    "hp": 12,
+    "shield": 0,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "production": true
+  },
+  {
+    "id": "terran-starport",
+    "faction": "terran",
+    "name": "Космопорт",
+    "type": "building",
+    "mineral": 6,
+    "gas": 4,
+    "time": 2,
+    "requires": [
+      "terran-factory"
+    ],
+    "text": "Одна очередь крейсеров. В базовом наборе технический модуль заменяет ядро синтеза.",
+    "art": "terran-base",
+    "hp": 12,
+    "shield": 0,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "production": true
+  },
+  {
+    "id": "terran-techlab",
+    "faction": "terran",
+    "name": "Технический модуль",
+    "type": "building",
+    "mineral": 2,
+    "gas": 1,
+    "time": 1,
+    "requires": [
+      "terran-barracks"
+    ],
+    "text": "Открывает мародёров и крейсеры. В прототипе требование глобальное; прикрепление к зданию — модуль полной игры.",
+    "art": "terran-base",
+    "hp": 8,
+    "shield": 0,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ]
+  },
+  {
+    "id": "terran-marine",
+    "faction": "terran",
+    "name": "Морпех",
+    "type": "unit",
+    "mineral": 2,
+    "gas": 0,
+    "time": 1,
+    "requires": [
+      "terran-barracks"
+    ],
+    "text": "Наземные и воздушные цели. Стимулятор: 1 урон себе, повторная активация один раз за цикл.",
+    "art": "marine",
+    "hp": 4,
+    "shield": 0,
+    "armor": 0,
+    "attack": 2,
+    "range": 1,
+    "supply": 1,
+    "targets": "both",
+    "tags": [
+      "light",
+      "biological"
+    ],
+    "producer": "terran-barracks"
+  },
+  {
+    "id": "terran-marauder",
+    "faction": "terran",
+    "name": "Мародёр",
+    "type": "unit",
+    "mineral": 4,
+    "gas": 1,
+    "time": 1,
+    "requires": [
+      "terran-barracks",
+      "terran-techlab"
+    ],
+    "text": "+2 урона по бронированным целям. Не атакует воздух.",
+    "art": "marauder",
+    "hp": 8,
+    "shield": 0,
+    "armor": 1,
+    "attack": 3,
+    "range": 1,
+    "supply": 2,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "biological"
+    ],
+    "bonus": 2,
+    "bonusTag": "armored",
+    "producer": "terran-barracks"
+  },
+  {
+    "id": "terran-siege-tank",
+    "faction": "terran",
+    "name": "Осадный танк",
+    "type": "unit",
+    "mineral": 6,
+    "gas": 5,
+    "time": 2,
+    "requires": [
+      "terran-factory"
+    ],
+    "text": "Особый приказ: осадный режим. В осаде: дальность 2, +2 урона, 1 урон остальным наземным юнитам сектора; движение запрещено.",
+    "art": "siege-tank",
+    "hp": 10,
+    "shield": 0,
+    "armor": 1,
+    "attack": 4,
+    "range": 1,
+    "supply": 3,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "producer": "terran-factory"
+  },
+  {
+    "id": "terran-battlecruiser",
+    "faction": "terran",
+    "name": "Боевой крейсер",
+    "type": "unit",
+    "mineral": 16,
+    "gas": 12,
+    "time": 3,
+    "requires": [
+      "terran-starport",
+      "terran-techlab"
+    ],
+    "text": "Воздушный. Атакует землю и воздух. Ямато и тактический прыжок входят в расширение.",
+    "art": "battlecruiser",
+    "hp": 22,
+    "shield": 0,
+    "armor": 2,
+    "attack": 6,
+    "range": 1,
+    "supply": 6,
+    "targets": "both",
+    "tags": [
+      "armored",
+      "mechanical",
+      "massive"
+    ],
+    "flying": true,
+    "producer": "terran-starport"
+  },
+  {
+    "id": "terran-stim",
+    "faction": "terran",
+    "name": "Стимулятор",
+    "type": "tactic",
+    "mineral": 0,
+    "gas": 0,
+    "time": 0,
+    "requires": [
+      "terran-barracks"
+    ],
+    "text": "Выбранный морпех или мародёр получает 1 урон и новую активацию. Не чаще раза за цикл на юнита.",
+    "art": "marine",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [],
+    "energy": 0
+  },
+  {
+    "id": "terran-scan",
+    "faction": "terran",
+    "name": "Сканирование",
+    "type": "tactic",
+    "mineral": 0,
+    "gas": 0,
+    "time": 0,
+    "requires": [
+      "terran-hq"
+    ],
+    "text": "Выбранный сектор и его соседи видимы до конца цикла. Обнаруживает закопанных юнитов.",
+    "art": "terran-base",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [],
+    "energy": 2
+  },
+  {
+    "id": "terran-repair",
+    "faction": "terran",
+    "name": "Полевой ремонт",
+    "type": "tactic",
+    "mineral": 2,
+    "gas": 0,
+    "time": 0,
+    "requires": [
+      "terran-hq"
+    ],
+    "text": "Восстановите 4 здоровья своей механической единице или зданию. Нужен свободный КСМ.",
+    "art": "siege-tank",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [],
+    "energy": 0
+  },
+  {
+    "id": "terran-weapons",
+    "faction": "terran",
+    "name": "Оружие +1",
+    "type": "upgrade",
+    "mineral": 4,
+    "gas": 4,
+    "time": 2,
+    "requires": [
+      "terran-techlab"
+    ],
+    "text": "Постоянно: +1 урона всем вашим боевым юнитам. Один уровень в базовом наборе.",
+    "art": "terran-base",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": []
+  },
+  {
+    "id": "terran-armor",
+    "faction": "terran",
+    "name": "Броня +1",
+    "type": "upgrade",
+    "mineral": 4,
+    "gas": 4,
+    "time": 2,
+    "requires": [
+      "terran-techlab"
+    ],
+    "text": "Постоянно: +1 брони всем вашим боевым юнитам. Не зданиям.",
+    "art": "terran-base",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": []
+  },
+  {
+    "id": "zerg-hq",
+    "faction": "zerg",
+    "name": "Инкубатор",
+    "type": "building",
+    "mineral": 12,
+    "gas": 0,
+    "time": 3,
+    "requires": [],
+    "text": "База: +10 лимита, 8 мест добычи. Источник слизи. Создаёт 1 личинку за цикл до естественного лимита 3.",
+    "art": "zerg-base",
+    "hp": 34,
+    "shield": 0,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "biological"
+    ],
+    "capacity": 10,
+    "headquarters": true
+  },
+  {
+    "id": "zerg-supply",
+    "faction": "zerg",
+    "name": "Надзиратель",
+    "type": "support",
+    "mineral": 4,
+    "gas": 0,
+    "time": 1,
+    "requires": [
+      "zerg-hq"
+    ],
+    "text": "Воздушный разведчик. +8 лимита. Обучается из личинки. Детекции нет.",
+    "art": "zerg-base",
+    "hp": 8,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "biological"
+    ],
+    "capacity": 8,
+    "flying": true,
+    "producer": "zerg-hq"
+  },
+  {
+    "id": "zerg-gas",
+    "faction": "zerg",
+    "name": "Экстрактор",
+    "type": "building",
+    "mineral": 1,
+    "gas": 0,
+    "time": 1,
+    "requires": [
+      "zerg-hq"
+    ],
+    "text": "3 рабочих места на газе. Рабочий превращается в здание.",
+    "art": "zerg-base",
+    "hp": 10,
+    "shield": 0,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "biological"
+    ],
+    "refinery": true
+  },
+  {
+    "id": "zerg-pool",
+    "faction": "zerg",
+    "name": "Омут рождения",
+    "type": "building",
+    "mineral": 8,
+    "gas": 0,
+    "time": 1,
+    "requires": [
+      "zerg-hq"
+    ],
+    "text": "Открывает зерглингов. Здания зергов требуют слизь; рабочий расходуется.",
+    "art": "zerg-base",
+    "hp": 12,
+    "shield": 0,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "biological"
+    ]
+  },
+  {
+    "id": "zerg-den",
+    "faction": "zerg",
+    "name": "Логово гидралисков",
+    "type": "building",
+    "mineral": 4,
+    "gas": 4,
+    "time": 2,
+    "requires": [
+      "zerg-pool"
+    ],
+    "text": "Открывает гидралисков. Логово/улей как отдельные стадии появятся в расширении.",
+    "art": "zerg-base",
+    "hp": 12,
+    "shield": 0,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "biological"
+    ]
+  },
+  {
+    "id": "zerg-spire",
+    "faction": "zerg",
+    "name": "Шпиль",
+    "type": "building",
+    "mineral": 8,
+    "gas": 8,
+    "time": 2,
+    "requires": [
+      "zerg-den"
+    ],
+    "text": "Открывает муталисков.",
+    "art": "zerg-base",
+    "hp": 12,
+    "shield": 0,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "biological"
+    ]
+  },
+  {
+    "id": "zerg-cavern",
+    "faction": "zerg",
+    "name": "Пещера ультралисков",
+    "type": "building",
+    "mineral": 6,
+    "gas": 8,
+    "time": 2,
+    "requires": [
+      "zerg-spire"
+    ],
+    "text": "Открывает ультралисков. Улей в базовом дереве свёрнут в это требование.",
+    "art": "zerg-base",
+    "hp": 12,
+    "shield": 0,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "biological"
+    ]
+  },
+  {
+    "id": "zerg-zergling",
+    "faction": "zerg",
+    "name": "Пара зерглингов",
+    "type": "unit",
+    "mineral": 2,
+    "gas": 0,
+    "time": 1,
+    "requires": [
+      "zerg-pool"
+    ],
+    "text": "Карта представляет двух зерглингов. Скорость 2 сектора. Один общий запас здоровья.",
+    "art": "zergling",
+    "hp": 4,
+    "shield": 0,
+    "armor": 0,
+    "attack": 3,
+    "range": 0,
+    "supply": 1,
+    "targets": "ground",
+    "tags": [
+      "light",
+      "biological"
+    ],
+    "speed": 2,
+    "producer": "zerg-hq"
+  },
+  {
+    "id": "zerg-hydralisk",
+    "faction": "zerg",
+    "name": "Гидралиск",
+    "type": "unit",
+    "mineral": 4,
+    "gas": 2,
+    "time": 1,
+    "requires": [
+      "zerg-den"
+    ],
+    "text": "Атакует землю и воздух. Восстанавливает 1 здоровье в начале цикла.",
+    "art": "hydralisk",
+    "hp": 7,
+    "shield": 0,
+    "armor": 0,
+    "attack": 4,
+    "range": 1,
+    "supply": 2,
+    "targets": "both",
+    "tags": [
+      "light",
+      "biological"
+    ],
+    "producer": "zerg-hq"
+  },
+  {
+    "id": "zerg-mutalisk",
+    "faction": "zerg",
+    "name": "Муталиск",
+    "type": "unit",
+    "mineral": 4,
+    "gas": 4,
+    "time": 2,
+    "requires": [
+      "zerg-spire"
+    ],
+    "text": "Воздушный, скорость 2. После попадания: 1 урон другому врагу в том же секторе.",
+    "art": "mutalisk",
+    "hp": 8,
+    "shield": 0,
+    "armor": 0,
+    "attack": 3,
+    "range": 1,
+    "supply": 2,
+    "targets": "both",
+    "tags": [
+      "light",
+      "biological"
+    ],
+    "flying": true,
+    "speed": 2,
+    "bounce": 1,
+    "producer": "zerg-hq"
+  },
+  {
+    "id": "zerg-ultralisk",
+    "faction": "zerg",
+    "name": "Ультралиск",
+    "type": "unit",
+    "mineral": 11,
+    "gas": 8,
+    "time": 3,
+    "requires": [
+      "zerg-cavern"
+    ],
+    "text": "Массивный. После атаки: 2 урона остальным наземным юнитам в секторе, включая своих.",
+    "art": "ultralisk",
+    "hp": 24,
+    "shield": 0,
+    "armor": 3,
+    "attack": 7,
+    "range": 0,
+    "supply": 6,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "biological",
+      "massive"
+    ],
+    "splash": 2,
+    "producer": "zerg-hq"
+  },
+  {
+    "id": "zerg-inject",
+    "faction": "zerg",
+    "name": "Инъекция личинок",
+    "type": "tactic",
+    "mineral": 0,
+    "gas": 0,
+    "time": 0,
+    "requires": [
+      "zerg-hq"
+    ],
+    "text": "Выбранный инкубатор получит 3 личинки в начале следующего цикла. Не складывается на одной базе.",
+    "art": "zerg-base",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [],
+    "energy": 2
+  },
+  {
+    "id": "zerg-creep",
+    "faction": "zerg",
+    "name": "Опухоль слизи",
+    "type": "tactic",
+    "mineral": 0,
+    "gas": 0,
+    "time": 0,
+    "requires": [
+      "zerg-hq"
+    ],
+    "text": "Покройте слизью видимый сектор рядом со своей слизью, если там нет врага.",
+    "art": "zerg-base",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [],
+    "energy": 0
+  },
+  {
+    "id": "zerg-burrow",
+    "faction": "zerg",
+    "name": "Закапывание",
+    "type": "tactic",
+    "mineral": 0,
+    "gas": 0,
+    "time": 0,
+    "requires": [
+      "zerg-pool"
+    ],
+    "text": "Наземный юнит закапывается или выкапывается. Под землёй он не двигается и не атакует; нужен детектор для прямой атаки.",
+    "art": "zergling",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [],
+    "energy": 0
+  },
+  {
+    "id": "zerg-weapons",
+    "faction": "zerg",
+    "name": "Атакующие мутации",
+    "type": "upgrade",
+    "mineral": 4,
+    "gas": 4,
+    "time": 2,
+    "requires": [
+      "zerg-den"
+    ],
+    "text": "Постоянно: +1 урона всем вашим боевым юнитам. Объединённая ветка базового набора.",
+    "art": "zerg-base",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": []
+  },
+  {
+    "id": "zerg-armor",
+    "faction": "zerg",
+    "name": "Панцирь +1",
+    "type": "upgrade",
+    "mineral": 4,
+    "gas": 4,
+    "time": 2,
+    "requires": [
+      "zerg-den"
+    ],
+    "text": "Постоянно: +1 брони всем вашим боевым юнитам. Не зданиям.",
+    "art": "zerg-base",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": []
+  },
+  {
+    "id": "protoss-hq",
+    "faction": "protoss",
+    "name": "Нексус",
+    "type": "building",
+    "mineral": 16,
+    "gas": 0,
+    "time": 3,
+    "requires": [],
+    "text": "База: +10 лимита и 8 мест добычи минералов. Обучает зонды. Источник хроноускорения.",
+    "art": "protoss-base",
+    "hp": 20,
+    "shield": 16,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "capacity": 10,
+    "headquarters": true
+  },
+  {
+    "id": "protoss-supply",
+    "faction": "protoss",
+    "name": "Пилон",
+    "type": "building",
+    "mineral": 4,
+    "gas": 0,
+    "time": 1,
+    "requires": [
+      "protoss-hq"
+    ],
+    "text": "+8 лимита. Питает свой и соседние секторы. Без питания очереди большинства зданий остановлены.",
+    "art": "protoss-base",
+    "hp": 6,
+    "shield": 6,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "capacity": 8
+  },
+  {
+    "id": "protoss-gas",
+    "faction": "protoss",
+    "name": "Ассимилятор",
+    "type": "building",
+    "mineral": 3,
+    "gas": 0,
+    "time": 1,
+    "requires": [
+      "protoss-hq"
+    ],
+    "text": "3 рабочих места на газе. Питание не требуется.",
+    "art": "protoss-base",
+    "hp": 7,
+    "shield": 5,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "refinery": true
+  },
+  {
+    "id": "protoss-gateway",
+    "faction": "protoss",
+    "name": "Врата",
+    "type": "building",
+    "mineral": 6,
+    "gas": 0,
+    "time": 1,
+    "requires": [
+      "protoss-hq"
+    ],
+    "text": "Одна очередь зилотов и сталкеров. Требует питания пилона.",
+    "art": "protoss-base",
+    "hp": 8,
+    "shield": 8,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "production": true
+  },
+  {
+    "id": "protoss-core",
+    "faction": "protoss",
+    "name": "Кибернетическое ядро",
+    "type": "building",
+    "mineral": 6,
+    "gas": 0,
+    "time": 1,
+    "requires": [
+      "protoss-gateway"
+    ],
+    "text": "Открывает сталкеров, робототехнику, флот и улучшения.",
+    "art": "protoss-base",
+    "hp": 8,
+    "shield": 8,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ]
+  },
+  {
+    "id": "protoss-robotics",
+    "faction": "protoss",
+    "name": "Завод робототехники",
+    "type": "building",
+    "mineral": 6,
+    "gas": 4,
+    "time": 2,
+    "requires": [
+      "protoss-core"
+    ],
+    "text": "Одна очередь бессмертных. Зонд свободен сразу после запуска строительства.",
+    "art": "protoss-base",
+    "hp": 8,
+    "shield": 8,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "production": true
+  },
+  {
+    "id": "protoss-stargate",
+    "faction": "protoss",
+    "name": "Звёздные врата",
+    "type": "building",
+    "mineral": 6,
+    "gas": 6,
+    "time": 2,
+    "requires": [
+      "protoss-core"
+    ],
+    "text": "Одна очередь авианосцев. Маяк флотилии свёрнут в это требование базового набора.",
+    "art": "protoss-base",
+    "hp": 8,
+    "shield": 8,
+    "armor": 1,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "production": true
+  },
+  {
+    "id": "protoss-zealot",
+    "faction": "protoss",
+    "name": "Зилот",
+    "type": "unit",
+    "mineral": 4,
+    "gas": 0,
+    "time": 1,
+    "requires": [
+      "protoss-gateway"
+    ],
+    "text": "Ближний бой. Щит восстанавливается на 2 в начале цикла, если в прошлом цикле не было урона.",
+    "art": "zealot",
+    "hp": 8,
+    "shield": 4,
+    "armor": 1,
+    "attack": 4,
+    "range": 0,
+    "supply": 2,
+    "targets": "ground",
+    "tags": [
+      "light",
+      "biological"
+    ],
+    "producer": "protoss-gateway"
+  },
+  {
+    "id": "protoss-stalker",
+    "faction": "protoss",
+    "name": "Сталкер",
+    "type": "unit",
+    "mineral": 5,
+    "gas": 2,
+    "time": 1,
+    "requires": [
+      "protoss-gateway",
+      "protoss-core"
+    ],
+    "text": "Наземные и воздушные цели. Скачок позволяет переместиться на 2 сектора.",
+    "art": "stalker",
+    "hp": 7,
+    "shield": 7,
+    "armor": 1,
+    "attack": 3,
+    "range": 1,
+    "supply": 2,
+    "targets": "both",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "producer": "protoss-gateway"
+  },
+  {
+    "id": "protoss-immortal",
+    "faction": "protoss",
+    "name": "Бессмертный",
+    "type": "unit",
+    "mineral": 11,
+    "gas": 4,
+    "time": 2,
+    "requires": [
+      "protoss-robotics"
+    ],
+    "text": "+3 урона по бронированным целям. Не атакует воздух. Барьер — модуль полной версии.",
+    "art": "immortal",
+    "hp": 12,
+    "shield": 8,
+    "armor": 1,
+    "attack": 4,
+    "range": 1,
+    "supply": 4,
+    "targets": "ground",
+    "tags": [
+      "armored",
+      "mechanical"
+    ],
+    "bonus": 3,
+    "bonusTag": "armored",
+    "producer": "protoss-robotics"
+  },
+  {
+    "id": "protoss-carrier",
+    "faction": "protoss",
+    "name": "Авианосец",
+    "type": "unit",
+    "mineral": 14,
+    "gas": 10,
+    "time": 3,
+    "requires": [
+      "protoss-stargate"
+    ],
+    "text": "Воздушный. Перехватчики включены в показатель атаки базового набора.",
+    "art": "carrier",
+    "hp": 18,
+    "shield": 14,
+    "armor": 2,
+    "attack": 6,
+    "range": 1,
+    "supply": 6,
+    "targets": "both",
+    "tags": [
+      "armored",
+      "mechanical",
+      "massive"
+    ],
+    "flying": true,
+    "producer": "protoss-stargate"
+  },
+  {
+    "id": "protoss-chrono",
+    "faction": "protoss",
+    "name": "Хроноускорение",
+    "type": "tactic",
+    "mineral": 0,
+    "gas": 0,
+    "time": 0,
+    "requires": [
+      "protoss-hq"
+    ],
+    "text": "Уменьшите на 1 таймер выбранной активной очереди. Нельзя ускорить обесточенное производство.",
+    "art": "protoss-base",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [],
+    "energy": 2
+  },
+  {
+    "id": "protoss-blink",
+    "faction": "protoss",
+    "name": "Скачок",
+    "type": "tactic",
+    "mineral": 0,
+    "gas": 0,
+    "time": 0,
+    "requires": [
+      "protoss-core"
+    ],
+    "text": "Выбранный сталкер перемещается на 1–2 сектора в видимую точку. Расходует его активацию.",
+    "art": "stalker",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [],
+    "energy": 0
+  },
+  {
+    "id": "protoss-storm",
+    "faction": "protoss",
+    "name": "Псионный шторм",
+    "type": "tactic",
+    "mineral": 0,
+    "gas": 2,
+    "time": 0,
+    "requires": [
+      "protoss-core"
+    ],
+    "text": "Видимый сектор: 3 урона всем юнитам обеих сторон, игнорируя броню. В прототипе это общая поддержка; в полной игре нужен высший тамплиер.",
+    "art": "zealot",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": [],
+    "energy": 3
+  },
+  {
+    "id": "protoss-weapons",
+    "faction": "protoss",
+    "name": "Вооружение +1",
+    "type": "upgrade",
+    "mineral": 4,
+    "gas": 4,
+    "time": 2,
+    "requires": [
+      "protoss-core"
+    ],
+    "text": "Постоянно: +1 урона всем вашим боевым юнитам. Объединённая ветка базового набора.",
+    "art": "protoss-base",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": []
+  },
+  {
+    "id": "protoss-armor",
+    "faction": "protoss",
+    "name": "Броня +1",
+    "type": "upgrade",
+    "mineral": 4,
+    "gas": 4,
+    "time": 2,
+    "requires": [
+      "protoss-core"
+    ],
+    "text": "Постоянно: +1 брони всем вашим боевым юнитам. Щиты остаются отдельным запасом.",
+    "art": "protoss-base",
+    "hp": 0,
+    "shield": 0,
+    "armor": 0,
+    "attack": 0,
+    "range": 0,
+    "supply": 0,
+    "targets": "ground",
+    "tags": []
+  }
+]

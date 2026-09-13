@@ -1,0 +1,26 @@
+{
+  "terran": {
+    "name": "Терраны",
+    "subtitle": "Сталь. Дисциплина. Огневая мощь.",
+    "color": "#70c7ff",
+    "art": "terran-base",
+    "macro": "МУЛ",
+    "worker": "КСМ"
+  },
+  "zerg": {
+    "name": "Зерги",
+    "subtitle": "Адаптация. Численность. Рой.",
+    "color": "#d69bff",
+    "art": "zerg-base",
+    "macro": "Инъекция личинок",
+    "worker": "Рабочий"
+  },
+  "protoss": {
+    "name": "Протоссы",
+    "subtitle": "Псионика. Технологии. Наследие.",
+    "color": "#f0ce80",
+    "art": "protoss-base",
+    "macro": "Хроноускорение",
+    "worker": "Зонд"
+  }
+}

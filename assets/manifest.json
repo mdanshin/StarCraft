@@ -1,0 +1,92 @@
+[
+  {
+    "file": "assets/art/marine.webp",
+    "id": "marine",
+    "method": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: premium full-bleed portrait illustration for a StarCraft II fan-made strategy card, no text or UI. Subject: a StarCraft Terran MARINE, hulking cobalt-blue CMC powered armor, amber visor, oversized gauss rifle held ready, one hero figure three-quarter view, low camera, ruined alien battlefield with cold smoke and orange embers. Style: exceptionally polished cinematic science-fiction oil-and-digital concept painting, convincing heavy materials, exquisite microdetail, rich chiaroscuro, sharp readable silhouette, restrained luminous effects, blue rim light and warm firing highlights, AAA collector card quality. Composition: vertical 2:3 portrait, figure fills upper two thirds, dramatic environment lower third, safe central crop, no lettering, no logo, no watermark, no card border. This is original generated fan art, not an existing screenshot."
+  },
+  {
+    "file": "assets/art/marauder.webp",
+    "id": "marauder",
+    "method": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: premium full-bleed portrait illustration for a StarCraft II fan-made strategy card, no text or UI. Subject: StarCraft TERRAN MARAUDER, one gigantic bulky cobalt-blue powered armor infantryman with twin oversized forearm-mounted grenade launchers, massive armored chest, reinforced round shoulders and amber visor. Industrial battlefield, orange tracer explosions, broad stable stance, camera low, blue steel material realism. Style: stunning polished cinematic science-fiction concept painting, exquisite material microdetail, vivid elegant color, convincing heavy forms, dramatic chiaroscuro, collector edition card art. Composition: vertical 2:3, strong single central subject in upper two thirds, supporting environment lower third, safe central crop. No text, logos, letters, watermark, or card border. Original fan art."
+  },
+  {
+    "file": "assets/art/siege-tank.webp",
+    "id": "siege-tank",
+    "method": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: full-bleed collector card art for a StarCraft II fan card game. Subject: A StarCraft TERRAN SIEGE TANK, colossal cobalt armored tracked artillery machine deployed on hydraulic outriggers, enormous extended cannon aimed diagonally upward, siege mode, low ground camera, an armored silhouette dominates frame. Distant burning industrial outpost, smoke and sparks, brushed blue steel, amber firing light, cold cyan rimlight. Style: exceptionally polished cinematic science-fiction digital painting, sophisticated chiaroscuro, intricate material detail, believable design, epic scale, premium AAA collectible card illustration. Composition: vertical portrait 2:3, strong single central subject in upper two thirds, supporting environment lower third, safe center crop. No text, letters, logos, watermark, or border. Original fan art, not a screenshot."
+  },
+  {
+    "file": "assets/art/battlecruiser.webp",
+    "id": "battlecruiser",
+    "method": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: premium full-bleed portrait illustration for a StarCraft II fan-made strategy card. Subject: StarCraft TERRAN BATTLECRUISER, monumental dark-blue armored capital ship, broad hammerhead front and massive aft engine assemblies, many gun turrets and glowing amber bridge windows. Viewed three-quarter from below, ship diagonal through vertical frame above a stormy planet, atmospheric battle smoke, fiery engines, blue steel, unmistakably industrial Terran engineering. Style: exquisite cinematic science-fiction concept painting, physically convincing materials, epic depth and scale, elegant highly detailed composition, strong sharp focal subject, AAA collector card quality. Composition: vertical 2:3, subject fits fully with safe central crop, main subject upper two thirds, atmospheric lower third. No text, logo, watermark, UI or border. Original generated fan art."
+  },
+  {
+    "file": "assets/art/zergling.webp",
+    "id": "zergling",
+    "method": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: full-bleed collector card art for a StarCraft II fan card game. Subject: A StarCraft ZERG ZERGLING, a low predatory alien with four running legs and two enormous curved scythe arms, jagged violet-brown chitin, wet obsidian talons and fangs, lunging toward camera through purple creep. A small swarm behind it, alien spires in deep background. Fierce animal anatomy, no humanoid armor. Ultraviolet dusk, acidic green highlights, organic ribbed textures. Style: exceptionally polished cinematic science-fiction digital painting, sophisticated chiaroscuro, intricate material detail, believable design, epic scale, premium AAA collectible card illustration. Composition: vertical portrait 2:3, strong single central subject in upper two thirds, supporting environment lower third, safe center crop. No text, letters, logos, watermark, or border. Original fan art, not a screenshot."
+  },
+  {
+    "file": "assets/art/hydralisk.webp",
+    "id": "hydralisk",
+    "method": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: premium full-bleed portrait illustration for a StarCraft II fan-made strategy card, no text or UI. Subject: StarCraft ZERG HYDRALISK, a tall serpentine alien with a long muscular coiled tail instead of human legs, extended ribbed hood crest and two huge scythe arms, sinister elongated toothed head, rich plum-brown chitin. Toxic alien marsh and brood spires, glistening creep, ultraviolet mist and acidic green glows. Style: stunning polished cinematic science-fiction concept painting, exquisite material microdetail, vivid elegant color, convincing heavy forms, dramatic chiaroscuro, collector edition card art. Composition: vertical 2:3, strong single central subject in upper two thirds, supporting environment lower third, safe central crop. No text, logos, letters, watermark, or card border. Original fan art."
+  },
+  {
+    "file": "assets/art/mutalisk.webp",
+    "id": "mutalisk",
+    "method": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: premium full-bleed portrait illustration for a StarCraft II fan-made strategy card. Subject: StarCraft ZERG MUTALISK, one enormous airborne organic alien with a long curling segmented tail, two huge batlike membrane wings, spiked chitin armor and gaping predator mouth, biological not a machine. Banking above violet volcanic spires and creep-covered canyons, green bioluminescent saliva, strong wing silhouette, purple-black and magenta sunset. Style: exquisite cinematic science-fiction concept painting, physically convincing materials, epic depth and scale, elegant highly detailed composition, strong sharp focal subject, AAA collector card quality. Composition: vertical 2:3, subject fits fully with safe central crop, main subject upper two thirds, atmospheric lower third. No text, logo, watermark, UI or border. Original generated fan art."
+  },
+  {
+    "file": "assets/art/ultralisk.webp",
+    "id": "ultralisk",
+    "method": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: premium full-bleed portrait illustration for a StarCraft II fan-made strategy card. Subject: StarCraft ZERG ULTRALISK, a colossal six-legged alien siege beast with huge broad armored back, dark violet layered chitin, four enormous ivory scythe tusks extending from its head and shoulders, low armored elephant/rhinoceros-like body, not bipedal. Charging across a field of creep, tiny zerglings for scale, purple storm clouds and green bio luminescence, thunderous mass. Style: exceptionally polished cinematic science-fiction concept painting, detailed convincing surfaces, dramatic scale and atmosphere, sophisticated color and chiaroscuro, luxurious collector-card art. Composition: vertical 2:3, central focal subject in upper two thirds, foreground environmental detail lower third, safe crop. No text, logos, letters, watermark, UI or border. Original generated fan art."
+  },
+  {
+    "file": "assets/art/zealot.webp",
+    "id": "zealot",
+    "method": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: full-bleed collector card art for a StarCraft II fan card game. Subject: A StarCraft PROTOSS ZEALOT, tall noble alien warrior with elongated head, no mouth, glowing cyan eyes and trailing nerve cords, ornate gold war armor and TWO bright cyan psi blades extending from the wrists, front three-quarter stance on ancient stone stairs. A golden alien temple behind. Ivory-gold dust, deep teal shadows, luminous electric cyan blades, powerful calm presence. Style: exceptionally polished cinematic science-fiction digital painting, sophisticated chiaroscuro, intricate material detail, believable design, epic scale, premium AAA collectible card illustration. Composition: vertical portrait 2:3, strong single central subject in upper two thirds, supporting environment lower third, safe center crop. No text, letters, logos, watermark, or border. Original fan art, not a screenshot."
+  },
+  {
+    "file": "assets/art/stalker.webp",
+    "id": "stalker",
+    "method": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: premium full-bleed portrait illustration for a StarCraft II fan-made strategy card, no text or UI. Subject: StarCraft PROTOSS STALKER, a quadrupedal alien war machine, four long bent elegant articulated legs, sleek curved gold and dark obsidian carapace, luminous cyan power orb at center, no humanoid rider. On shattered ancient temple terraces, pale stone and gold ruins, sharp teal shadows, energy ribbons, very readable full silhouette. Style: stunning polished cinematic science-fiction concept painting, exquisite material microdetail, vivid elegant color, convincing heavy forms, dramatic chiaroscuro, collector edition card art. Composition: vertical 2:3, strong single central subject in upper two thirds, supporting environment lower third, safe central crop. No text, logos, letters, watermark, or card border. Original fan art."
+  },
+  {
+    "file": "assets/art/immortal.webp",
+    "id": "immortal",
+    "method": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: premium full-bleed portrait illustration for a StarCraft II fan-made strategy card. Subject: StarCraft PROTOSS IMMORTAL, a golden heavily armored quadrupedal robotic walker, massive wide two-cannon shoulder chassis on FOUR stout articulated legs, brilliant cyan spherical barrier flaring around it. Gold and ivory armor, black undersurfaces, twin heavy cannons aimed outward, ruined golden alien temple, low hero angle, luminous teal shield and warm dust. Style: exceptionally polished cinematic science-fiction concept painting, detailed convincing surfaces, dramatic scale and atmosphere, sophisticated color and chiaroscuro, luxurious collector-card art. Composition: vertical 2:3, central focal subject in upper two thirds, foreground environmental detail lower third, safe crop. No text, logos, letters, watermark, UI or border. Original generated fan art."
+  },
+  {
+    "file": "assets/art/carrier.webp",
+    "id": "carrier",
+    "method": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: premium full-bleed portrait illustration for a StarCraft II fan-made strategy card. Subject: StarCraft PROTOSS CARRIER, majestic monumental golden alien capital ship, elegant layered crescent hull, long split forward prongs, luminous blue energy core, several tiny autonomous golden interceptors launching beneath. Floating above ivory ancient temple towers among clouds. Rich luminous gold, warm sunbeams, cyan energy, teal space, regal scale and refined detailing. Style: exquisite cinematic science-fiction concept painting, physically convincing materials, epic depth and scale, elegant highly detailed composition, strong sharp focal subject, AAA collector card quality. Composition: vertical 2:3, subject fits fully with safe central crop, main subject upper two thirds, atmospheric lower third. No text, logo, watermark, UI or border. Original generated fan art."
+  },
+  {
+    "file": "assets/art/terran-base.webp",
+    "id": "terran-base",
+    "method": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Asset type: premium full-bleed portrait illustration for a StarCraft II fan-made strategy card. Subject: A StarCraft TERRAN COMMAND CENTER and industrial base at blue hour on an alien planet. The iconic huge circular armored industrial headquarters with an octagonal lower footprint and raised central command tower, cobalt and gunmetal plating, amber window strips; mining SCV robots in the foreground collecting brilliant blue crystal minerals, green vespene refinery on one side, supply depots and radar in distance. Strong central headquarters silhouette, cinematic wide environmental depth adapted into portrait composition. NO humanoid foreground hero. Style: exceptionally polished cinematic science-fiction concept painting, detailed convincing surfaces, dramatic scale and atmosphere, sophisticated color and chiaroscuro, luxurious collector-card art. Composition: vertical 2:3, central focal subject in upper two thirds, foreground environmental detail lower third, safe crop. No text, logos, letters, watermark, UI or border. Original generated fan art."
+  },
+  {
+    "id": "zerg-base",
+    "prompt": "Use case: stylized-concept. Asset type: premium full-bleed portrait environment art for a StarCraft II fan-made strategy card. Subject: A StarCraft ZERG HATCHERY at the center of a living alien colony, enormous low purple-brown organic mound with a ribbed carapace and pulsing green sacs, spiked tendrils spreading over violet creep, glistening larva near its roots. A floating OVERLORD, massive bulbous airborne biological creature with trailing tentacles, in the upper background, plus harvesting drones and blue mineral crystals in foreground. Violet storm sky, acid green bioluminescence. Make it unmistakably a breeding colony, not a humanoid creature. Style: exceptionally polished cinematic science-fiction concept painting, refined epic environment design, exquisite material detail, sophisticated chiaroscuro, rich atmospheric perspective, premium collector-card quality. Composition: vertical 2:3, strong central subject in upper two thirds, detailed foreground lower third, safe crop. No text, logos, letters, watermark, UI or border. Original generated fan art.",
+    "file": "assets/art/zerg-base.webp",
+    "method": "built-in image_gen"
+  },
+  {
+    "id": "protoss-base",
+    "prompt": "Use case: stylized-concept. Asset type: premium full-bleed portrait environment art for a StarCraft II fan-made strategy card. Subject: A StarCraft PROTOSS NEXUS, massive elegant golden alien pyramid-shaped headquarters with sweeping curved prongs around a brilliant cyan energy core, radiant pylons framing the building, tiny floating probe workers harvesting blue crystal minerals in foreground. Ancient white stone terraces and gilded structures in the background, early morning sun, gold and ivory materials, cool cyan power fields. Regal alien city, strong central architectural subject, no humanoid foreground. Style: exceptionally polished cinematic science-fiction concept painting, refined epic environment design, exquisite material detail, sophisticated chiaroscuro, rich atmospheric perspective, premium collector-card quality. Composition: vertical 2:3, strong central subject in upper two thirds, detailed foreground lower third, safe crop. No text, logos, letters, watermark, UI or border. Original generated fan art.",
+    "file": "assets/art/protoss-base.webp",
+    "method": "built-in image_gen"
+  }
+]
