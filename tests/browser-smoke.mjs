@@ -30,7 +30,6 @@ try {
   await page.screenshot({ path: path.join(out, 'desktop-battle.png'), fullPage: true });
 
   await page.locator('.nav[data-view="arsenal"]').click();
-  console.log('Catalog selector:', await page.locator('#type-filter').evaluate(el => ({ html: el.outerHTML, options: Array.from(el.options, o => ({ value: o.value, label: o.label })) })));
   await page.locator('#type-filter').selectOption('all');
   assert.equal(await page.locator('#catalog .game-card').count(), 48);
   await page.evaluate(() => document.querySelectorAll('img').forEach(img => { img.loading = 'eager'; }));
